@@ -15,7 +15,7 @@ body {
     font-size: 1.6rem ;
     color: #131212 ;
     background-color: #FFFFFF;
-    margin: 0rem;
+    margin: 0;
     line-height: 1.6;
 }
 
@@ -95,6 +95,9 @@ a {
 .header {
     background-color: #FFFFFF;
     border-bottom: 1px solid #ececec;
+    position: sticky;
+    z-index: 3;
+    top: 0;
 }
 
 .header .logo {
@@ -102,10 +105,6 @@ a {
     font-weight: 500;
     font-size: 2rem;
     letter-spacing: 1px;
-}
-
-.navbar {
-    display: none;
 }
 
 
@@ -236,14 +235,14 @@ a:hover {
 }
 
 @media screen and (min-width:750px) {
-    .navbar {
-        display: flex;
-    }
     .burger {
         display: none;
     }
 }
 
+    nav {
+        display: block;
+    }
 
 /* Sections */
 
