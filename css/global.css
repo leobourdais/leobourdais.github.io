@@ -245,6 +245,7 @@ a:hover {
     }
 
 /* Sections */
+/*Mise en forme*/
 
 section {
     padding: 5.5rem 0;
@@ -263,7 +264,6 @@ text-align: center;
     margin-top: 0;
     background: rgb(216, 213, 213); 
     text-align: center;
-
 }
     
 
@@ -274,6 +274,8 @@ text-align: center;
 @media screen and (min-width:750px) {
     
 }
+
+/*Accueil*/
 
 .hero {
     color: #000000;
@@ -347,6 +349,8 @@ text-align: center;
     }
 }
 
+/*A propos*/
+
 .about .section-title {
     margin-top: 2.8rem;
 }
@@ -362,8 +366,11 @@ text-align: center;
     }
 }
 
+/*Services*/
+
 .services {
     background: #FFFFFF;
+    display: flex;
 }
 
 .service__icon {
