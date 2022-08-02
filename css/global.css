@@ -90,25 +90,7 @@ a {
 }
 }
 
-/* Sections */
-
-section {
-    padding: 5.5rem 0;
-}
-
-.section-header {
-text-align: center;
-}
-
-
-.section title {
-    text-transform: uppercase;
-    color: #000000;
-    font-size: 3.8rem;
-    font-family: 'Noto Sans', sans-serif;
-    margin-top: 0;
-    text-align: center;
-}
+/* Header */
 
 .header {
     background-color: #FFFFFF;
@@ -158,6 +140,7 @@ a:hover {
 .socials .icons {
     height: 18px;
 }
+
 
 /* Navigation Mobile*/
 
@@ -259,6 +242,27 @@ a:hover {
     .burger {
         display: none;
     }
+}
+
+
+/* Sections */
+
+section {
+    padding: 5.5rem 0;
+}
+
+.section-header {
+text-align: center;
+}
+
+
+.section title {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 3.8rem;
+    font-family: 'Noto Sans', sans-serif;
+    margin-top: 0;
+    text-align: center;
 }
 
 .hero {
