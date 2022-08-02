@@ -290,7 +290,6 @@ a:hover {
     justify-content: center;
     width: 90px;
     height: 90px;
-    margin: 0 auto;
     border: 2px solid gray;
     border-radius: 50%;
 }
@@ -301,15 +300,23 @@ height: 35px;
 
 .service__content {
     flex:1;
+    align-items: center;
 }
 
 .service h3 {
     margin-bottom:0;
 }
 
+.grid__item .services {
+    
+}
+
 @media screen and (max-width:749px) {
 .service {
     text-align: center;
+}
+.service__icon {
+    margin: 0 auto;
 }
 }
 
