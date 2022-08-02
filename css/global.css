@@ -255,13 +255,20 @@ text-align: center;
 }
 
 
-.section title {
+.section-title {
     text-transform: uppercase;
     color: #000000;
-    font-size: 3.8rem;
+    font-size: 3.2rem;
     font-family: 'Noto Sans', sans-serif;
     margin-top: 0;
-    text-align: center;
+    background: rgb(216, 213, 213); }
+
+.section-header p {
+    text-align: left;
+}
+
+@media screen and (min-width:750px) {
+    
 }
 
 .hero {
@@ -299,7 +306,11 @@ text-align: center;
 }
 
 .hero__avatar img {
-        max-width: 400px;
+        max-width: 350px;
+    }
+
+    .hero .grid {
+        align-items: center;
     }
 
 }
