@@ -278,12 +278,12 @@ text-align: center;
 .hero {
     color: #000000;
     padding: 1rem 0 0 0;
-    display: block;
+    display: flex;
 }
 
 .hero .container {
     background: rgb(216, 213, 213);
-    display: flex;
+    margin: auto;
 }
 
 .hero .title {
