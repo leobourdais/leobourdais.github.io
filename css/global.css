@@ -334,6 +334,16 @@ text-align: center;
     text-transform: uppercase;
 }
 
+.hero__item.left {
+    animation-duration: 1s;
+    animation-name: slideInleft;
+}
+
+.hero__item.right {
+    animation-duration: 1s;
+    animation-name: slideInright;
+}
+
 @media screen and (max-width:749px) {
 .hero__item.left {
     order: 2;
@@ -652,4 +662,21 @@ footer .grid__item {
 }
 }
 
-/*2H25 = temps passé sur la vidéo 2*/
+
+@keyframes slideInleft {
+    from {
+        transform: translateX(-110%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInright {
+    from {
+        transform: translateX(110%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
