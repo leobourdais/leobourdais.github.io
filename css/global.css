@@ -513,20 +513,25 @@ height: 35px;
 }
 
 .card__overlay {
-    font-size: 4.5rem;
-    background: rgb(0, 0, 0, 0.6); 
+    background: rgb(0, 0, 0, 0.8); 
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
     top: 0;
+    z-index: 0;
     width: 100%;
     height: 100%;
 }
 
 .card__overlay a {
     color: #FFFFFF;
-
+    font-size: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
 }
 
 @media screen and (max-width:749px) {
@@ -541,6 +546,92 @@ height: 35px;
 }
 .portfolio-filters .grid__item {
     max-width: 25%;
+}
+}
+
+/* Contact */
+
+.form {
+    max-width: 600px;
+    margin: 4rem auto 0 auto;
+}
+
+.form input, .form textarea{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.form textarea{
+    min-height: 200px;
+}
+
+.form .btn {
+    background: rgb(0, 0, 0);
+    color: #FFFFFF;
+    width: auto;
+    border: none;
+    min-width: 160px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.form .btn {
+    cursor: pointer;
+}
+
+.form .btn:hover {
+    background-color: #585858;
+}
+
+/*Footer*/
+
+footer {
+    color: #585858;
+    background: #c0bebe;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .grid {
+    align-items: center;
+}
+
+footer .socials {
+    justify-content: center;
+    text-align: center;    
+}
+
+footer .socials li {
+    padding: 0 1.5rem;
+}
+
+footer .socials a {
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:749px) {
+     
+}
+
+@media screen and (min-width:750px) {
+footer {
+    text-align: left;
+}
+footer .grid__item {
+    max-width: 33.3333%;
 }
 }
 
