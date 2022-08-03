@@ -51,6 +51,10 @@ img {
     height: auto;
 }
 
+ul {
+    padding-left: 2rem;
+}
+
 li {
     margin-bottom: 1rem;
 }
