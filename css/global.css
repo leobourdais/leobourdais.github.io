@@ -1,6 +1,9 @@
 
 /* Base */
 
+:root {
+}
+
 *{
     box-sizing: border-box;
 
@@ -104,7 +107,7 @@ li {
 .header {
     background-color: #FFFFFF;
     border-bottom: 1px solid #ececec;
-    position: sticky;
+    position:sticky;
     z-index: 3;
     top: 0;
 }
@@ -308,11 +311,8 @@ text-align: center;
 .hero {
     color: #000000;
     padding: 1rem 0 0 0;
-}
+        background: rgb(216, 213, 213);
 
-.hero .container {
-    background: rgb(216, 213, 213);
-    margin: auto;
 }
 
 .hero .title {
@@ -347,6 +347,7 @@ text-align: center;
 @media screen and (max-width:749px) {
 .hero__item.left {
     order: 2;
+    text-align: justify;
 }
 .hero__item.right {
     order: 1;
@@ -383,6 +384,9 @@ text-align: center;
     }
     .hero__item.right {
         align-items: center;
+    }
+    .hero .grid {
+        flex-direction: row;
     }
 }
 
@@ -642,6 +646,7 @@ footer .socials a {
     padding: 1rem;
     display: flex;
     justify-content: center;
+    transition: all 0.4s ;
 }
 
 footer .socials a:hover {
@@ -662,21 +667,44 @@ footer .grid__item {
 }
 }
 
+/*Variables*/
 
+@media screen and (max-width:749px) {
 @keyframes slideInleft {
     from {
-        transform: translateX(-110%);
+        opacity: 0%;
     }
     to {
-        transform: translateX(0);
+        opacity: 100%;
     }
 }
 
 @keyframes slideInright {
     from {
-        transform: translateX(110%);
+        opacity: 0%;
     }
     to {
-        transform: translateX(0);
+        opacity: 100%;
     }
+}
+}
+
+@media screen and (min-width:750px) {
+@keyframes slideInleft {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes slideInright {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
 }
