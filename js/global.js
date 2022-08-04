@@ -34,14 +34,10 @@ function tabsFilters() {
     tabs.forEach(elem => {
         elem.addEventListener('click', (event) => {
             event.preventDefault();
-            
         });
     });
-    
     showProjets();
 }
 
-tabsFilters()
 
-/*1H26m54s sur la vidéo JS*/
 
