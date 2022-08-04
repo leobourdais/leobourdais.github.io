@@ -3,7 +3,7 @@
 function menuMobile() {
     const btn = document.querySelector('.burger');
     const header = document.querySelector('.header');
-    const link = document.querySelectorAll('.navbar a');
+    const links = document.querySelectorAll('.navbar a');
 
 
     btn.addEventListener('click', () => {
@@ -17,4 +17,31 @@ function menuMobile() {
 }
 
 menuMobile();
+
+
+/* Projets */
+
+function tabsFilters() {
+    const tabs = document.querySelectorAll('.portfolio-filters a');
+    const projets = document.querySelectorAll('.portfolio .card');
+    
+    const showProjets = () => {
+        projets.forEach(projet => {
+            console.log(projet);
+        });
+    }
+    
+    tabs.forEach(elem => {
+        elem.addEventListener('click', (event) => {
+            event.preventDefault();
+            
+        });
+    });
+    
+    showProjets();
+}
+
+tabsFilters()
+
 /*1H26m54s sur la vidéo JS*/
+
