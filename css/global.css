@@ -489,6 +489,11 @@ height: 35px;
     background-color: #FFFFFF;
 }
 
+.portfolio .grid__item .card img {
+    margin: auto;
+    width: 600px;
+    height: 200px;
+}
 .portfolio .grid__item {
     max-width: 50%;
     margin-bottom: 0;
