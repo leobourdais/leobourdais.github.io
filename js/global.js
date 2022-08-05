@@ -22,28 +22,6 @@ menuMobile();
 /* Projets */
 
 function tabsFilters() {
-    const tabs = document.querySelectorAll('.portfolio-filters a');
-    const projets = document.querySelectorAll('.portfolio .card');
-    
-    
-    const showProjets = (elem) => {
-        projets.forEach(projet => {
-            console.log(projet);
-        });
-    }
-    
-    tabs.forEach(elem => {
-        elem.addEventListener('click', (event) => {
-            event.preventDefault();
-            
-        });
-    });
-    showProjets();
-}
-
-/* Projets (version dev) */
-
-function tabsFilters() {
   const tabs = document.querySelectorAll('.portfolio-filters a');
   const projets = document.querySelectorAll('.portfolio .card');
 
@@ -63,14 +41,6 @@ function tabsFilters() {
         return
       }
 
-      /*if (filter !== elem) {
-        projet.parentNode.classList.add('hide');
-       
-      } else {
-        projet.parentNode.classList.remove('hide');
-        
-      }*/
-
       filter !== elem ? projet.parentNode.classList.add('hide') : projet.parentNode.classList.remove('hide');
 
     });
@@ -89,5 +59,6 @@ function tabsFilters() {
 }
 
 tabsFilters();
+
 
 /*1H32m15s : reprendre pour comprendre pourquoi prevent default ne marche pas chez moi*/
