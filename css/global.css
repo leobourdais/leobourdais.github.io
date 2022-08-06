@@ -290,7 +290,7 @@ text-align: center;
     
 
 .section-header p {
-    text-align: left;
+    text-align: center;
 }
 
 @media screen and (max-width:749px) {
@@ -694,6 +694,16 @@ footer {
 footer .grid__item {
     max-width: 33.3333%;
 }
+}
+
+/*Composants*/
+
+.modal {
+    display: none;
+}
+
+.show.modal {
+    display: block;
 }
 
 /*Variables*/

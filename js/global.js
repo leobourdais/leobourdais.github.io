@@ -60,5 +60,34 @@ function tabsFilters() {
 
 tabsFilters();
 
+function showProjetsDetails() {
+  const links = document.querySelectorAll('.card__link');
+  const modals = document.querySelectorAll('.modal');
+  const btns = document.querySelectorAll('.modal__close');
 
-/*1H47m56s */
+
+  const hideModals = () => {
+    modals.forEach(modal => {
+      modal.classList.remove('show');
+    });
+  }
+
+  links.forEach(elem => {
+    elem.addEventListener('click', function (event) {
+      event.preventDefault();
+      document.querySelector(`[id=${elem.dataset.id}]`).classList.add('show');
+
+    });
+  })
+
+    btns.forEach(btn => {
+      btn.addEventListener('click', function (event) {
+        hideModals();
+
+    });
+  })
+
+}
+
+showProjetsDetails();
+/*2H03m20s */
