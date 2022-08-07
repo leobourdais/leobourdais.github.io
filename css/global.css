@@ -766,6 +766,17 @@ footer .grid__item {
     }
 }
 
+.modal p {
+    padding-left: 3rem;
+    text-align: justify;
+}
+
+.modal ul {
+    padding-left: 5rem;
+}
+.modal li {
+    padding-left: 2rem;
+}
 
 /*Variables*/
 
