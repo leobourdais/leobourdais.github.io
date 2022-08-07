@@ -90,7 +90,7 @@ function showProjetsDetails() {
 }
 
 showProjetsDetails();
-/*2H03m20s */
+/*33min12s bonus video*/ 
 
 /*effets*/
 
