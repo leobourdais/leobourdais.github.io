@@ -91,3 +91,31 @@ function showProjetsDetails() {
 
 showProjetsDetails();
 /*2H03m20s */
+
+/*effets*/
+
+const observerIntersectionAnimation = () => {
+  const sections = document.querySelectorAll('section');
+
+
+  sections.forEach((section, index) => {
+    if (index === 0) return;
+    section.style.opacity = "0";
+    section.style.transition = "all 1.6s";
+  });
+
+  let sectionObserver = new IntersectionObserver(function (entries, observer) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        let elem = entry.target;
+        elem.style.opacity = 1;
+      }
+    });
+  });
+  sections.forEach(section => {
+    sectionObserver.observe(section)
+  });
+
+}
+
+observerIntersectionAnimation();
