@@ -44,6 +44,7 @@ h3,
 
 a {
     text-decoration: none;
+    color: #000000;
 }
 
 img {
@@ -491,8 +492,7 @@ height: 35px;
 
 .portfolio .grid__item .card img {
     margin: auto;
-    width: 600px;
-    height: 200px;
+    aspect-ratio: auto 600 / 400;
 }
 .portfolio .grid__item {
     max-width: 50%;
@@ -729,6 +729,7 @@ footer .grid__item {
 
 .modal img {
     margin-bottom: 2rem;
+    aspect-ratio: auto 600 / 400;
 }
 
 .modal__title {
@@ -823,8 +824,46 @@ footer .grid__item {
 /* Blog */
 
 .cardblog {
-    border: 1px solid #000000;
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(216, 213, 213);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 100%;
+    padding: 1rem;
+}
+
+.stretched-link::after {
+    position:relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+    color: rgb(216, 213, 213);
+}
+
+.cardblog a {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-color: #000000;
+    border: 1px solid;
+    padding: 0.5rem;
+    transition: all 0.4s ease;
+    background-color: #ffffff;
+}
+.cardblog a:hover {
+    background-color: rgb(216, 213, 213);
+}
+
+/* Dossier Emil Cioran*/
+
+.gridemilcioran {
+    border: 1px solid rgb(216, 213, 213);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
     text-align: center;
     flex-grow: 1;
     flex-shrink: 0;
