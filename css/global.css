@@ -829,8 +829,9 @@ footer .grid__item {
     text-align: center;
     flex-grow: 1;
     flex-shrink: 0;
-    width: 100%;
+    max-width: 100%;
     padding: 1rem;
+    max-height: 100%;
 }
 
 .stretched-link::after {
@@ -862,11 +863,32 @@ footer .grid__item {
 /* Dossier Emil Cioran*/
 
 .gridemilcioran {
-    border: 1px solid rgb(216, 213, 213);
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
     text-align: center;
     flex-grow: 1;
     flex-shrink: 0;
-    width: 100%;
+    max-width: 50%;
     padding: 1rem;
+}
+
+@media screen and (max-width:749px) {
+    .gridemilcioran {
+        max-width: 100%;
+    }
+}
+
+.emilciorancontent {
+    border: 1px solid rgb(216, 213, 213);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+    height: 200px;
+}
+
+sectionarticleem h1 {
+}
+
+.container1 {
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgb(216, 213, 213);
+    display: block;
+    text-align: center;
 }
