@@ -907,3 +907,10 @@ sectionarticleem h1 {
     margin: 2rem 6rem 2rem 6rem;
     
 }
+
+.articletransition {
+    font-size: 2rem;
+    display: inline-block;
+    background-color: rgb(216, 213, 213);
+    margin-bottom: 0rem;
+}
