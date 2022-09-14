@@ -61,11 +61,6 @@ ul {
     padding-left: 2rem;
 }
 
-li {
-    margin-bottom: 1rem;
-    margin-left: 15px;
-}
-
 .list-unstyled {
     list-style: none;
     margin: 0;
