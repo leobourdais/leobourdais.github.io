@@ -914,3 +914,10 @@ sectionarticleem h1 {
     background-color: rgb(216, 213, 213);
     margin-bottom: 0rem;
 }
+
+.datedeparution {
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    font-style: italic;
+}
