@@ -884,7 +884,7 @@ footer .grid__item {
 .emilciorancontent {
     border: 1px solid rgb(216, 213, 213);
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
-    height: 200px;
+    height: auto;
 }
 
 /*sectionarticleem h1 {
