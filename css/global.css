@@ -460,7 +460,7 @@ height: 35px;
 .service {
     display: flex;
     align-items: center;
-    text-align: left;
+    text-align: center;
 }
 .service__icon {
     margin-right: 2rem;
