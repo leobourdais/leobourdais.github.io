@@ -113,7 +113,7 @@ ul {
 /* Header */
 
 .header {
-    background-color: #FFFFFF;
+    background-color: #1c1c1c;
     border-bottom: 1px solid #ececec;
     position:sticky;
     z-index: 3;
@@ -136,7 +136,7 @@ ul {
 }
 
 .header a {
-    color: #000000;
+    color: #c7c7c7;
 }
 
 @media screen and (min-width:750px) {
@@ -146,7 +146,7 @@ ul {
 }
 
 a:hover {
-    color: rgb(216, 213, 213);
+    color: rgb(134, 133, 133);
 }
 
 .header .right {
@@ -653,8 +653,8 @@ height: 35px;
 /*Footer*/
 
 footer {
-    color: #585858;
-    background: #c0bebe;
+    color: #ffffff;
+    background: #1c1c1c;
     text-align: center;
     font-size: 1.4rem;
 }
@@ -678,7 +678,7 @@ footer .socials li {
 
 footer .socials a {
     color: #000000;
-    border: 1px solid #000000;
+    border: 1px solid #ffffff;
     border-radius: 50%;
     width: 42px;
     height: 42px;
