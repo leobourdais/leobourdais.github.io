@@ -18,37 +18,19 @@
 
 </head>
 <body>
-    <!--
-
-    Header
-        Logo
-        Menu
-        Réseaux sociaux
-        Burger (mobile)
-    Hero
-        Left
-        Right
-    About
-        Left
-        Right
-    Projets
-    Compétences
-    Portfolio
-    Contact
-    Footer
-
-    -->
-
+    
     <Header class="header">
         <div class="container d-flex">
             <div class="logo">
-                Léo Bourdais
+                
             </div>
             <nav class="navbar">
                 <ul class="menu list-unstyled">
-                    <li><a href="#hero">Accueil</a></li>
-            
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#hero">ACCUEIL</a></li>
+                    <li><a href="Blog/index.html">BLOG</a></li>
+                    <li><a href="#projets">PROJETS</a></li>
+                    <li><a href="#about">A PROPOS</a></li>
+                    <li><a href="#" onclick="openContactForm()">CONTACT</a></li>
                 </ul>
             </nav>
             <div class="right">
@@ -66,7 +48,7 @@
     <section id="hero" class="hero">
         <div class="container">
             <div class="grid">
-                    <p><center>Actualisation en cours</center></p>
+                    <p><center>Actualisation</center></p>
                 </div>
                 <!--div class="hero__item right">
                     <div class="hero__avatar">
@@ -78,7 +60,7 @@
     </section>
 <!----------------------------------------------------------------------------------------------------->
    
-<!----------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
@@ -99,6 +81,35 @@
         </form>    
         </div>
     </section>
+-->
+    <div class="contact-form-overlay" id="contactForm">
+        <div class="contact-form">
+            <span class="close-btn" onclick="closeContactForm()">&times;</span>
+            <h2>Contactez-moi !</h2>
+            <form>
+                <input type="text" placeholder="Votre nom" required>
+                <input type="email" placeholder="Votre email" required>
+                <textarea placeholder="Votre message" required></textarea>
+              <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function openContactForm() {
+            document.getElementById('contactForm').style.display = 'flex';
+        }
+
+        function closeContactForm() {
+            document.getElementById('contactForm').style.display = 'none';
+        }
+
+        function toggleTheme() {
+            const body = document.body;
+           
+        }
+    </script>
+</body>
 <!----------------------------------------------------------------------------------------------------->
 <footer>
 <div class="container">
